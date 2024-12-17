@@ -47,8 +47,10 @@
             dgvOrders.Name = "dgvOrders";
             dgvOrders.ReadOnly = true;
             dgvOrders.RowHeadersWidth = 51;
+            dgvOrders.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvOrders.Size = new Size(1003, 329);
             dgvOrders.TabIndex = 0;
+            dgvOrders.CellMouseUp += dgvOrders_CellMouseUp;
             // 
             // dgvDetails
             // 
